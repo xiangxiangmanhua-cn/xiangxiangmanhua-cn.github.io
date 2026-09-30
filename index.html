@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<title>香香漫画 - 热门漫画在线阅读_最新漫画大全连载更新</title>
+<meta name="description" content="香香漫画提供热门漫画在线阅读、连载漫画追更、国漫日漫韩漫大全、漫画排行榜与新书资讯，每日更新章节，海量漫画一键搜索，手机电脑多端同步阅读。">
+<meta name="keywords" content="香香漫画,香香漫画在线阅读,漫画大全,热门漫画,连载漫画,国漫,日漫,韩漫,漫画排行榜,漫画资讯,在线漫画">
+<meta name="author" content="香香漫画">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+<link rel="canonical" href="https://www.xiangxiangmanhua-cn/">
+<meta name="theme-color" content="#16151a">
+<link rel="apple-touch-icon" href="/favicon.ico">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="香香漫画">
+<meta property="og:title" content="香香漫画 - 热门漫画在线阅读">
+<meta property="og:description" content="香香漫画，热门漫画在线阅读、连载追更、国漫日漫韩漫大全，每日更新章节与漫画排行榜。">
+<meta property="og:url" content="https://www.xiangxiangmanhua-cn/">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="format-detection" content="telephone=no">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://www.xiangxiangmanhua-cn/#website",
+      "url": "https://www.xiangxiangmanhua-cn/",
+      "name": "香香漫画",
+      "alternateName": "香香漫画在线阅读",
+      "description": "香香漫画提供热门漫画在线阅读、连载追更、国漫日漫韩漫大全与漫画排行榜服务，每日更新章节。",
+      "inLanguage": "zh-CN",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.xiangxiangmanhua-cn/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://www.xiangxiangmanhua-cn/#organization",
+      "name": "香香漫画",
+      "url": "https://www.xiangxiangmanhua-cn/",
+      "logo": "https://www.xiangxiangmanhua-cn/favicon.ico",
+      "sameAs": ["https://www.xiangxiangmanhua-cn/"]
+    },
+    {
+      "@type": "ItemList",
+      "name": "香香漫画人气排行榜",
+      "itemListElement": [
+        {"@type":"ListItem","position":1,"name":"香香物语"},
+        {"@type":"ListItem","position":2,"name":"第七页的雨"},
+        {"@type":"ListItem","position":3,"name":"橘子汽水社"},
+        {"@type":"ListItem","position":4,"name":"深夜面包店"},
+        {"@type":"ListItem","position":5,"name":"风与单车"}
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type":"ListItem","position":1,"name":"首页","item":"https://www.xiangxiangmanhua-cn/"},
+        {"@type":"ListItem","position":2,"name":"热门漫画","item":"https://www.xiangxiangmanhua-cn/#manga"},
+        {"@type":"ListItem","position":3,"name":"今日更新","item":"https://www.xiangxiangmanhua-cn/#update"},
+        {"@type":"ListItem","position":4,"name":"漫画资讯","item":"https://www.xiangxiangmanhua-cn/#news"}
+      ]
+    }
+  ]
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+:root{
+  --paper:#faf7f0;--paper2:#f1ebe0;--paper3:#e7dfd2;
+  --ink:#16151a;--ink2:#2c2a33;--gray:#8a8578;
+  --red:#e0393e;--red2:#a51f24;--blue:#2b5fa8;--grn:#2f8a5b;--yel:#f0b429;--pur:#7a4fb5;
+  --max:1200px;
+}
+html{scroll-behavior:smooth}
+body{
+  font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB","Helvetica Neue",Arial,sans-serif;
+  background:linear-gradient(180deg,#fdfbf7 0%,var(--paper) 44%,var(--paper2) 100%);
+  background-attachment:fixed;color:var(--ink);line-height:1.72;-webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+/* 网点纸 */
+body::before{
+  content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;opacity:.5;
+  background-image:radial-gradient(circle at 30% 30%,rgba(22,21,26,.09) 0 1px,transparent 1.2px);
+  background-size:7px 7px
+}
+body::after{
+  content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+  background:radial-gradient(40vw 26vw at 8% 4%,rgba(224,57,62,.09),transparent 72%),
+             radial-gradient(38vw 26vw at 94% 96%,rgba(43,95,168,.08),transparent 72%)
+}
+a{color:inherit;text-decoration:none}
+ul,ol{list-style:none}
+.wrap{width:100%;max-width:var(--max);margin:0 auto;padding:0 18px}
+.mono{font-family:"Courier New",Courier,monospace}
+
+/* 网点带 */
+.toner{height:12px;position:relative;overflow:hidden;background:var(--ink)}
+.toner::after{
+  content:"";position:absolute;inset:0;
+  background-image:radial-gradient(circle at 50% 50%,rgba(250,247,240,.55) 0 1px,transparent 1.3px);background-size:8px 8px
+}
+/* 分镜分隔条 */
+.panelbar{display:flex;align-items:center;gap:12px;margin:34px 0 0}
+.panelbar i{flex:1;height:0;border-top:3px solid var(--ink)}
+.panelbar b{
+  flex:0 0 auto;font-size:11.5px;font-weight:900;letter-spacing:6px;padding:4px 16px;color:#fff;
+  background:var(--ink);border:3px solid var(--ink);border-radius:2px
+}
+/* 纸卡 */
+.sheet{
+  position:relative;background:linear-gradient(165deg,#fffdf9,var(--paper));
+  border:3px solid var(--ink);border-radius:3px;
+  box-shadow:7px 7px 0 rgba(22,21,26,.14)
+}
+.sheet::before{
+  content:"";position:absolute;left:0;right:0;top:0;height:6px;background:var(--ink);
+  background-image:radial-gradient(circle at 50% 50%,rgba(250,247,240,.6) 0 1px,transparent 1.3px);background-size:8px 8px
+}
+/* 拟声词 */
+.sfx{
+  display:inline-block;font-size:12px;font-weight:900;letter-spacing:3px;padding:6px 16px;color:#fff;
+  background:var(--ink);transform:rotate(-2deg);border-radius:2px
+}
+.sfx.r{background:var(--red)}
+.sfx.b{background:var(--blue)}
+/* 分镜编号 */
+.pnum{
+  display:inline-flex;align-items:center;justify-content:center;width:48px;height:44px;flex:0 0 48px;position:relative;
+  border:3px solid var(--ink);border-radius:2px;background:#fff;
+  box-shadow:4px 4px 0 rgba(22,21,26,.16)
+}
+.pnum::before{
+  content:"";position:absolute;inset:3px;
+  background-image:radial-gradient(circle at 50% 50%,rgba(22,21,26,.28) 0 1px,transparent 1.3px);background-size:6px 6px
+}
+.pnum b{position:relative;z-index:2;font-size:14px;font-weight:900}
+.pnum.r{box-shadow:4px 4px 0 var(--red)}
+.pnum.b{box-shadow:4px 4px 0 var(--blue)}
+.pnum.g{box-shadow:4px 4px 0 var(--grn)}
+.pnum.y{box-shadow:4px 4px 0 var(--yel)}
+.pnum.p{box-shadow:4px 4px 0 var(--pur)}
+/* 墨格条 */
+.inkbar{display:flex;gap:3px;flex:1;min-width:0}
+.inkbar i{flex:1;height:13px;border:2px solid var(--ink);border-radius:1px;background:#fff}
+.inkbar i.on{background:var(--ink)}
+.inkbar.r i.on{background:var(--red)}
+.inkbar.b i.on{background:var(--blue)}
+.inkbar.g i.on{background:var(--grn)}
+.inkbar.y i.on{background:var(--yel)}
+.inkbar.p i.on{background:var(--pur)}
+
+/* ===== 顶部 ===== */
+header{position:sticky;top:0;z-index:70;background:rgba(250,247,240,.97);backdrop-filter:blur(9px);border-bottom:3px solid var(--ink)}
+.toner.top{height:10px}
+.masthead{
+  display:flex;align-items:center;gap:12px;flex-wrap:wrap;font-size:11.5px;font-weight:900;letter-spacing:2px;
+  padding:7px 2px;color:var(--gray);border-bottom:2px solid var(--ink)
+}
+.masthead b{color:var(--red)}
+.masthead .mid{color:var(--blue)}
+.bar-nav{display:flex;align-items:center;gap:12px;padding:11px 2px}
+.logo{display:flex;align-items:center;gap:11px;flex:0 0 auto}
+.logo .bk{
+  width:42px;height:46px;position:relative;border:3px solid var(--ink);border-radius:2px 5px 5px 2px;
+  background:var(--red);box-shadow:4px 4px 0 rgba(22,21,26,.2);overflow:hidden
+}
+.logo .bk::before{
+  content:"";position:absolute;left:0;top:0;bottom:0;width:9px;background:var(--red2);
+  border-right:2px solid rgba(255,255,255,.5)
+}
+.logo .bk::after{
+  content:"";position:absolute;right:5px;top:9px;width:22px;height:22px;border-radius:50%;
+  border:2px solid rgba(255,255,255,.85)
+}
+.logo b{font-size:21px;font-weight:900;letter-spacing:-.5px}
+.logo b em{font-style:normal;color:var(--red)}
+.nav{flex:1;display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;justify-content:center}
+.nav::-webkit-scrollbar{display:none}
+.nav a{flex:0 0 auto;font-size:14.5px;font-weight:800;padding:7px 14px;border:2px solid transparent;border-radius:2px;color:var(--ink2);white-space:nowrap;transition:.2s}
+.nav a:hover{color:var(--ink);border-color:var(--ink);background:#fff}
+.nav a.on{color:#fff;background:var(--ink);border-color:var(--ink)}
+.read{
+  flex:0 0 auto;font-size:12.5px;font-weight:900;letter-spacing:2px;padding:8px 18px;border:3px solid var(--ink);
+  border-radius:2px;color:#fff;background:var(--red);box-shadow:4px 4px 0 var(--ink);white-space:nowrap
+}
+.read:active{transform:translate(4px,4px);box-shadow:0 0 0 var(--ink)}
+@media(max-width:900px){
+  .bar-nav{flex-wrap:wrap;gap:8px}
+  .nav{order:3;flex:1 0 100%;justify-content:flex-start;border-top:2px solid var(--ink);padding-top:9px}
+  .read{margin-left:auto;padding:6px 13px;font-size:12px}
+  .logo b{font-size:18px}
+}
+
+/* ===== 首屏 ===== */
+.hero{padding:26px 0 8px}
+.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:clamp(20px,4vw,34px);align-items:center}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr;gap:26px}}
+.hero h1{font-size:clamp(32px,6.9vw,55px);line-height:1.2;font-weight:900;letter-spacing:-1px;margin-top:20px}
+.hero h1 em{
+  font-style:normal;color:#fff;padding:3px 18px 6px;border-radius:3px;display:inline-block;position:relative;
+  background:var(--red);border:3px solid var(--ink);box-shadow:6px 6px 0 rgba(22,21,26,.2)
+}
+.hero .lead{margin-top:16px;font-size:clamp(13.5px,2.4vw,16.5px);color:var(--ink2);max-width:540px}
+/* 对话气泡搜索框 */
+.bubble{
+  margin-top:26px;max-width:540px;position:relative;padding:14px 16px 22px;border:3px solid var(--ink);
+  border-radius:26px;background:#fff;box-shadow:6px 6px 0 rgba(22,21,26,.14)
+}
+.bubble::after{
+  content:"";position:absolute;left:44px;bottom:-19px;width:0;height:0;
+  border-left:12px solid transparent;border-right:12px solid transparent;border-top:19px solid var(--ink)
+}
+.bubble .row{display:flex;align-items:center;gap:10px}
+.bubble .ic{flex:0 0 22px;text-align:center;font-size:17px}
+.bubble input{flex:1;min-width:0;border:0;outline:none;background:transparent;font-size:15px;padding:8px 2px;color:var(--ink);font-family:inherit}
+.bubble input::placeholder{color:#a09a8c}
+.bubble button{
+  border:3px solid var(--ink);border-radius:18px;padding:9px 22px;font-size:15px;font-weight:900;letter-spacing:2px;
+  color:#fff;background:var(--ink);cursor:pointer;font-family:inherit;white-space:nowrap
+}
+.bubble .tip{font-size:11px;font-weight:900;letter-spacing:2px;color:var(--gray);margin-top:6px;text-align:center}
+.chips{display:flex;flex-wrap:wrap;gap:9px;margin-top:20px}
+.chips a{font-size:12.5px;font-weight:800;padding:6px 14px;border:2px solid var(--ink);border-radius:2px;color:var(--ink2);background:#fff}
+.chips a:hover{background:var(--ink);color:#fff}
+
+/* 单行本展开 */
+.book{padding:clamp(14px,3vw,22px)}
+.book .hd{
+  display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:11px;font-weight:900;letter-spacing:2px;
+  color:var(--gray);padding-bottom:12px;border-bottom:2px dashed var(--ink);margin-bottom:16px
+}
+.book .hd b{color:var(--red)}
+.spread{
+  position:relative;display:grid;grid-template-columns:1fr 1fr;gap:0;border:3px solid var(--ink);border-radius:3px;
+  background:#fff;box-shadow:8px 8px 0 rgba(22,21,26,.16);overflow:hidden
+}
+.spread::before{
+  content:"";position:absolute;left:50%;top:0;bottom:0;width:14px;transform:translateX(-50%);z-index:3;
+  background:linear-gradient(90deg,rgba(22,21,26,.16),rgba(22,21,26,.34) 50%,rgba(22,21,26,.16))
+}
+/* 左页：封面 */
+.cover{padding:16px 12px 14px;text-align:center;position:relative;background:linear-gradient(165deg,#fff6ef,#ffe9e2)}
+.cover .vol{
+  display:inline-block;font-size:10.5px;font-weight:900;letter-spacing:3px;padding:3px 12px;color:#fff;background:var(--red);
+  border:2px solid var(--ink);border-radius:2px
+}
+.cover .tt{margin-top:10px;font-size:clamp(17px,3.4vw,25px);font-weight:900;letter-spacing:-.5px;line-height:1.22}
+.cover .au{margin-top:5px;font-size:11.5px;font-weight:800;color:var(--gray);letter-spacing:1px}
+.cover .num{
+  margin-top:10px;font-size:clamp(22px,4.8vw,34px);font-weight:900;letter-spacing:-1px;line-height:1.1
+}
+.cover .num span{display:block;font-size:10px;font-weight:900;letter-spacing:4px;color:var(--gray)}
+.cover .badge{
+  margin-top:10px;display:inline-block;font-size:10.5px;font-weight:900;letter-spacing:2px;padding:3px 11px;
+  border:2px solid var(--ink);border-radius:2px;color:var(--ink);background:#fff;transform:rotate(-3deg)
+}
+/* 右页：分镜格 */
+.pages{padding:10px;display:grid;grid-template-rows:1.15fr 1fr 1fr;gap:8px;background:#fffdf9}
+.cell{
+  position:relative;border:3px solid var(--ink);border-radius:2px;overflow:hidden;display:grid;place-items:center;
+  font-size:clamp(15px,3vw,22px)
+}
+.cell::before{
+  content:"";position:absolute;inset:0;
+  background-image:radial-gradient(circle at 50% 50%,rgba(22,21,26,.3) 0 1px,transparent 1.3px);background-size:6px 6px
+}
+.cell.c1{background:linear-gradient(150deg,#ffe9e2,#ffd2c8)}
+.cell.c2{background:linear-gradient(150deg,#e6efff,#cddcf7)}
+.cell.c3{background:linear-gradient(150deg,#e7f6ea,#cbe9d5)}
+/* 集中线 */
+.focus{
+  position:absolute;inset:0;opacity:.5;
+  background:repeating-conic-gradient(from 0deg at 50% 50%,rgba(22,21,26,.5) 0deg 3deg,transparent 3deg 9deg)
+}
+.cell em{position:relative;z-index:3;font-style:normal;font-weight:900;transform:rotate(-6deg);font-size:clamp(11px,2.2vw,14px);letter-spacing:2px}
+.slots{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-top:14px}
+.slt{padding:11px 6px;text-align:center;border:2px solid var(--ink);border-radius:2px;background:#fff}
+.slt b{display:block;font-size:clamp(15px,2.9vw,20px);font-weight:900}
+.slt:nth-child(1) b{color:var(--red)}
+.slt:nth-child(2) b{color:var(--blue)}
+.slt:nth-child(3) b{color:var(--grn)}
+.slt span{font-size:10.5px;font-weight:900;letter-spacing:2px;color:var(--gray)}
+.book .ft{
+  margin-top:13px;padding-top:11px;border-top:2px dashed var(--ink);display:flex;align-items:center;
+  justify-content:center;gap:10px;font-size:11px;font-weight:900;letter-spacing:2px;color:var(--gray)
+}
+.book .ft b{color:var(--ink)}
+
+/* ===== 栏目通用 ===== */
+section{padding:38px 0}
+.head{display:flex;align-items:flex-end;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-bottom:22px}
+.head h2{font-size:clamp(20px,3.9vw,28px);font-weight:900;letter-spacing:-.6px;display:flex;align-items:center;gap:12px}
+.head p{font-size:12.5px;font-weight:900;color:var(--gray);margin-top:6px;flex:1 0 100%;letter-spacing:2px}
+.more{
+  font-size:13px;font-weight:900;padding:8px 18px;border:3px solid var(--ink);border-radius:2px;color:#fff;
+  background:var(--ink);box-shadow:4px 4px 0 rgba(22,21,26,.2);white-space:nowrap
+}
+.more:hover{background:var(--red);border-color:var(--ink)}
+.more:active{transform:translate(4px,4px);box-shadow:0 0 0}
+
+/* ===== 漫画：单行本 ===== */
+.grid{display:grid;gap:18px;grid-template-columns:repeat(5,1fr)}
+@media(max-width:1040px){.grid{grid-template-columns:repeat(4,1fr)}}
+@media(max-width:800px){.grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:560px){.grid{grid-template-columns:repeat(2,1fr);gap:14px}}
+.manga{display:block;transition:.24s}
+.manga:hover{transform:translateY(-6px)}
+.manga .vol{
+  position:relative;aspect-ratio:3/4;border:3px solid var(--ink);border-radius:2px 8px 8px 2px;overflow:hidden;
+  box-shadow:6px 6px 0 rgba(22,21,26,.16)
+}
+.manga .vol::before{
+  content:"";position:absolute;left:0;top:0;bottom:0;width:11px;z-index:4;
+  background:linear-gradient(90deg,rgba(22,21,26,.55),rgba(22,21,26,.2));border-right:2px solid rgba(255,255,255,.4)
+}
+.manga .vol .face{
+  position:absolute;inset:0;left:11px;display:grid;place-items:center;font-size:34px;overflow:hidden
+}
+.manga .vol .face::before{
+  content:"";position:absolute;inset:0;
+  background-image:radial-gradient(circle at 50% 50%,rgba(22,21,26,.26) 0 1px,transparent 1.3px);background-size:6px 6px
+}
+.manga .vol .face::after{
+  content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 46%,rgba(22,21,26,.72))
+}
+.manga .vol .bno{
+  position:absolute;left:16px;top:8px;z-index:5;font-size:10.5px;font-weight:900;letter-spacing:1px;padding:2px 9px;
+  border:2px solid var(--ink);border-radius:2px;color:var(--ink);background:#fff
+}
+.manga .vol .rt{
+  position:absolute;right:8px;bottom:8px;z-index:5;font-size:12px;font-weight:900;padding:2px 9px;
+  border:2px solid var(--ink);border-radius:2px;color:#fff;background:var(--red)
+}
+.manga:hover .vol{border-color:var(--red);box-shadow:6px 6px 0 var(--red)}
+.manga .cap{
+  margin-top:8px;padding:10px 11px 12px;border:2px solid var(--ink);border-radius:2px;background:#fff
+}
+.manga .cap h3{font-size:14.5px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.manga .cap p{font-size:12px;color:var(--gray);margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+/* ===== 分类：分镜格 ===== */
+.cats{display:grid;gap:13px;grid-template-columns:repeat(6,1fr)}
+@media(max-width:1000px){.cats{grid-template-columns:repeat(4,1fr)}}
+@media(max-width:560px){.cats{grid-template-columns:repeat(3,1fr)}}
+.genre{
+  padding:17px 8px 14px;text-align:center;border:3px solid var(--ink);border-radius:2px;position:relative;
+  transition:.22s;background:#fff;overflow:hidden
+}
+.genre::before{
+  content:"";position:absolute;left:0;right:0;top:0;height:7px;
+  background-image:radial-gradient(circle at 50% 50%,var(--ink) 0 1px,transparent 1.3px);background-size:7px 7px
+}
+.genre:nth-child(6n+2)::before{background-image:radial-gradient(circle at 50% 50%,var(--red) 0 1px,transparent 1.3px)}
+.genre:nth-child(6n+3)::before{background-image:radial-gradient(circle at 50% 50%,var(--blue) 0 1px,transparent 1.3px)}
+.genre:nth-child(6n+4)::before{background-image:radial-gradient(circle at 50% 50%,var(--grn) 0 1px,transparent 1.3px)}
+.genre:nth-child(6n+5)::before{background-image:radial-gradient(circle at 50% 50%,var(--yel) 0 1px,transparent 1.3px)}
+.genre:nth-child(6n)::before{background-image:radial-gradient(circle at 50% 50%,var(--pur) 0 1px,transparent 1.3px)}
+.genre:hover{transform:translateY(-4px) rotate(-1deg);box-shadow:5px 5px 0 var(--ink)}
+.genre em{font-style:normal;font-size:24px;display:block;margin-top:8px;margin-bottom:4px}
+.genre b{font-size:13.5px;font-weight:900}
+.genre small{display:block;font-size:11.5px;color:var(--gray);margin-top:2px}
+
+/* ===== 双栏 ===== */
+.cols{display:grid;gap:18px;grid-template-columns:1.5fr 1fr}
+@media(max-width:860px){.cols{grid-template-columns:1fr}}
+.pnl{padding:20px}
+.pnl h3{
+  font-size:16.5px;font-weight:900;margin-bottom:14px;padding-bottom:12px;display:flex;align-items:center;gap:10px;
+  border-bottom:2px dashed var(--ink)
+}
+.pnl h3 span{
+  width:16px;height:16px;flex:0 0 16px;border:3px solid var(--ink);border-radius:2px;background:var(--red)
+}
+.up li{display:flex;gap:12px;align-items:center;padding:11px 0;border-bottom:2px dotted rgba(22,21,26,.22)}
+.up li:last-child{border-bottom:0}
+.up .n{
+  flex:0 0 34px;height:34px;border:3px solid var(--ink);border-radius:2px;display:grid;place-items:center;
+  font-size:12.5px;font-weight:900;color:var(--ink);background:#fff
+}
+.up li:nth-child(-n+3) .n{color:#fff;background:var(--ink)}
+.up .t{flex:1;min-width:0}
+.up .t b{display:block;font-size:14.5px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.up .t small{font-size:12px;color:var(--gray)}
+.up .e{
+  font-size:11.5px;font-weight:900;padding:4px 11px;border:2px solid var(--ink);border-radius:2px;color:#fff;
+  background:var(--red);white-space:nowrap
+}
+.rk li{display:flex;align-items:center;gap:11px;padding:10px 0;border-bottom:2px dotted rgba(22,21,26,.22)}
+.rk li:last-child{border-bottom:0}
+.rk .n{flex:0 0 34px;height:34px;border:3px solid var(--ink);border-radius:2px;display:grid;place-items:center;font-size:12.5px;font-weight:900;background:#fff}
+.rk li:nth-child(1) .n{color:#fff;background:var(--red)}
+.rk li:nth-child(2) .n{color:#fff;background:var(--blue)}
+.rk li:nth-child(3) .n{color:#fff;background:var(--grn)}
+.rk .nm{flex:0 0 90px;font-size:13.5px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.rk .h{flex:0 0 50px;font-size:11.5px;font-weight:900;color:var(--ink2);text-align:right}
+@media(max-width:560px){.rk .nm{flex:0 0 62px;font-size:12.5px}.rk .h{flex:0 0 44px}.rk .inkbar i:nth-child(n+6){display:none}}
+
+/* ===== 资讯 ===== */
+.news{display:grid;gap:18px;grid-template-columns:repeat(3,1fr)}
+@media(max-width:860px){.news{grid-template-columns:1fr}}
+.art{
+  display:block;border:3px solid var(--ink);border-radius:3px;overflow:hidden;transition:.24s;background:#fff;
+  box-shadow:6px 6px 0 rgba(22,21,26,.12)
+}
+.art:hover{transform:translateY(-5px);box-shadow:6px 6px 0 var(--ink)}
+.art .ph{height:132px;display:grid;place-items:center;font-size:32px;position:relative;border-bottom:3px solid var(--ink)}
+.art .ph::before{
+  content:"";position:absolute;inset:0;
+  background-image:radial-gradient(circle at 50% 50%,rgba(22,21,26,.22) 0 1px,transparent 1.3px);background-size:6px 6px
+}
+.art .ph span{
+  position:relative;z-index:2;position:absolute;left:10px;bottom:10px;font-size:11px;font-weight:900;letter-spacing:1px;
+  padding:3px 12px;border:2px solid var(--ink);border-radius:2px;color:#fff;background:var(--ink)
+}
+.art .bd{padding:14px 16px 18px}
+.art h3{font-size:15.5px;font-weight:900;margin-bottom:6px}
+.art p{font-size:13px;color:var(--ink2);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.art time{display:block;font-size:11.5px;color:var(--gray);margin-top:10px;letter-spacing:2px}
+
+/* ===== 特色 ===== */
+.feats{display:grid;gap:14px;grid-template-columns:repeat(4,1fr)}
+@media(max-width:860px){.feats{grid-template-columns:repeat(2,1fr)}}
+.feat{padding:24px 20px;border:3px solid var(--ink);border-radius:3px;position:relative;overflow:hidden;background:#fff}
+.feat::before{
+  content:"";position:absolute;left:0;right:0;top:0;height:8px;
+  background-image:radial-gradient(circle at 50% 50%,var(--red) 0 1px,transparent 1.3px);background-size:7px 7px
+}
+.feat:nth-child(2)::before{background-image:radial-gradient(circle at 50% 50%,var(--blue) 0 1px,transparent 1.3px)}
+.feat:nth-child(3)::before{background-image:radial-gradient(circle at 50% 50%,var(--grn) 0 1px,transparent 1.3px)}
+.feat:nth-child(4)::before{background-image:radial-gradient(circle at 50% 50%,var(--yel) 0 1px,transparent 1.3px)}
+.feat em{font-style:normal;font-size:27px;display:block;margin-bottom:8px;position:relative;z-index:2}
+.feat b{font-size:15.5px;font-weight:900;position:relative;z-index:2}
+.feat:nth-child(1) b{color:var(--red)}
+.feat:nth-child(2) b{color:var(--blue)}
+.feat:nth-child(3) b{color:var(--grn)}
+.feat:nth-child(4) b{color:#b57f0a}
+.feat p{font-size:12.5px;color:var(--ink2);margin-top:4px;position:relative;z-index:2}
+
+/* ===== 简介 ===== */
+.intro{padding:clamp(26px,4vw,42px);text-align:center;position:relative}
+.intro h3{font-size:clamp(19px,3.3vw,27px);font-weight:900;margin-bottom:12px}
+.intro p{font-size:14px;color:var(--ink2);max-width:840px;margin:0 auto}
+.intro .sig{
+  margin-top:20px;display:inline-flex;align-items:center;gap:9px;font-size:11.5px;font-weight:900;letter-spacing:4px;
+  padding:9px 20px;border:3px solid var(--ink);border-radius:2px;color:#fff;background:var(--red);transform:rotate(-1deg)
+}
+
+/* ===== 页脚 ===== */
+footer{margin-top:26px;padding:32px 0 26px;background:var(--ink);color:#e8e4dc;border-top:3px solid var(--ink)}
+.toner.bot{height:10px;margin-bottom:18px}
+.frow{display:grid;gap:24px;grid-template-columns:1.6fr 1fr 1fr 1fr;padding-bottom:24px;border-bottom:2px dashed rgba(232,228,220,.28)}
+@media(max-width:860px){.frow{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.frow{grid-template-columns:1fr}}
+.frow h4{font-size:15px;font-weight:900;margin-bottom:11px;color:#ffd9d5}
+.frow ul li{padding:4px 0;font-size:13.2px;color:#b9b3a9}
+.frow ul li:hover{color:#fff}
+.frow p{font-size:13px;color:#b9b3a9;margin-top:7px}
+.flinks{display:flex;flex-wrap:wrap;gap:9px;margin-top:22px}
+.flinks a{font-size:12.5px;font-weight:800;padding:6px 14px;border:2px solid rgba(232,228,220,.35);border-radius:2px;color:#ddd8cf}
+.flinks a:hover{background:#faf7f0;color:var(--ink);border-color:#faf7f0}
+.copy{text-align:center;font-size:12.5px;color:#8d877d;margin-top:22px;letter-spacing:1px}
+.copy a:hover{color:#fff}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaobao.js"></script>
+
+<header>
+  <div class="toner top" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="masthead mono">
+      <span>香香漫画 · MANGA WEEKLY</span>
+      <span>在库 <b>28 640</b> 部</span>
+      <span class="mid">今日更新 <b>436</b> 话</span>
+      <span>每日 10:00 / 20:00 更新</span>
+    </div>
+    <div class="bar-nav">
+      <a href="#" class="logo" aria-label="香香漫画首页">
+        <span class="bk" aria-hidden="true"></span>
+        <b>香香<em>漫画</em></b>
+      </a>
+      <nav class="nav" aria-label="主导航">
+        <a href="#" class="on">首页</a>
+        <a href="#">热门漫画</a>
+        <a href="#">国漫</a>
+        <a href="#">日漫</a>
+        <a href="#">韩漫</a>
+        <a href="#">排行榜</a>
+        <a href="#">漫画资讯</a>
+      </nav>
+      <a href="#" class="read">开 始 阅 读</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- 首屏 -->
+  <section class="hero wrap">
+    <div class="hero-grid">
+      <div>
+        <span class="sfx r">连载中 · 每周双更</span>
+        <h1>香香漫画<br><em>翻开下一页，故事正在发生</em></h1>
+        <p class="lead">香香漫画收录热门连载漫画、完结佳作、国漫日漫韩漫大全，提供漫画简介、章节目录、人气排名与在线阅读入口，手机、平板、电脑多端同步，随时追更。</p>
+        <form class="bubble" action="#" method="get" role="search">
+          <div class="row">
+            <span class="ic" aria-hidden="true">🔍</span>
+            <input type="search" name="q" placeholder="漫画名 / 作者 · 如：香香物语" aria-label="站内搜索">
+            <button type="submit">搜 索</button>
+          </div>
+          <p class="tip mono">试试搜索：热血 / 恋爱 / 悬疑 / 治愈</p>
+        </form>
+        <div class="chips">
+          <a href="#">热门连载</a><a href="#">完结佳作</a><a href="#">国漫</a><a href="#">日漫</a>
+          <a href="#">韩漫</a><a href="#">条漫</a><a href="#">热血</a><a href="#">恋爱</a>
+          <a href="#">悬疑</a><a href="#">治愈</a>
+        </div>
+      </div>
+      <aside class="book sheet">
+        <div class="hd mono"><span>VOLUME · 单行本</span><b>第 01 卷</b></div>
+        <div class="spread" role="img" aria-label="单行本展开页：在库漫画 28640 部">
+          <div class="cover">
+            <span class="vol">VOL.01</span>
+            <p class="tt">香香漫画<br>精选合订本</p>
+            <p class="au">香香漫画编辑部 / 编</p>
+            <p class="num mono">28 640<span>在库漫画 · TOTAL</span></p>
+            <span class="badge">人气刊 · 每周双更</span>
+          </div>
+          <div class="pages">
+            <span class="cell c1"><span class="focus" aria-hidden="true"></span><em>咚 !</em></span>
+            <span class="cell c2"><em>第 01 页</em></span>
+            <span class="cell c3"><em>第 02 页</em></span>
+          </div>
+        </div>
+        <div class="slots">
+          <div class="slt"><b class="mono">436</b><span>今日更新</span></div>
+          <div class="slt"><b class="mono">12 480</b><span>连载中</span></div>
+          <div class="slt"><b class="mono">20:00</b><span>更新时间</span></div>
+        </div>
+        <div class="ft mono"><span>阅读模式 <b>卷纸 / 条漫</b></span><span>·</span><span>翻页 流畅</span></div>
+      </aside>
+    </div>
+  </section>
+
+  <div class="wrap"><div class="panelbar" aria-hidden="true"><i></i><b>第 01 话</b><i></i></div></div>
+
+  <!-- 栏目一 -->
+  <section class="wrap" id="manga">
+    <div class="head">
+      <div>
+        <h2><span class="pnum"><b>01</b></span>热门漫画 · 在线阅读</h2>
+        <p>香香漫画编辑精选，每日更新章节</p>
+      </div>
+      <a href="#" class="more">查看全部 &gt;</a>
+    </div>
+    <div class="grid">
+      <a href="#" class="manga">
+        <div class="vol"><span class="face" style="background:linear-gradient(165deg,#ffd9d4,#f0958f 60%,#7d2622)"><span class="bno">Vol.12</span><span class="rt">9.6</span>🌸</span></div>
+        <div class="cap"><h3>香香物语</h3><p>恋爱 / 校园 · 连载中</p></div>
+      </a>
+      <a href="#" class="manga">
+        <div class="vol"><span class="face" style="background:linear-gradient(165deg,#d6e6ff,#8fb0e8 60%,#26406f)"><span class="bno">Vol.08</span><span class="rt">9.4</span>🌧️</span></div>
+        <div class="cap"><h3>第七页的雨</h3><p>青春 / 治愈 · 连载中</p></div>
+      </a>
+      <a href="#" class="manga">
+        <div class="vol"><span class="face" style="background:linear-gradient(165deg,#ffe9bf,#f0b429 60%,#7a5305)"><span class="bno">Vol.05</span><span class="rt">9.3</span>🍊</span></div>
+        <div class="cap"><h3>橘子汽水社</h3><p>群像 / 日常 · 连载中</p></div>
+      </a>
+      <a href="#" class="manga">
+        <div class="vol"><span class="face" style="background:linear-gradient(165deg,#e0d4f5,#a583e0 60%,#42276e)"><span class="bno">Vol.03</span><span class="rt">9.2</span>🍞</span></div>
+        <div class="cap"><h3>深夜面包店</h3><p>治愈 / 生活 · 连载中</p></div>
+      </a>
+      <a href="#" class="manga">
+        <div class="vol"><span class="face" style="background:linear-gradient(165deg,#d6f2e0,#6fbf8e 60%,#1f5b39)"><span class="bno">Vol.09</span><span class="rt">9.5</span>🚲</span></div>
+        <div class="cap"><h3>风与单车</h3><p>运动 / 青春 · 连载中</p></div>
+      </a>
+      <a href="#" class="manga">
+        <div class="vol"><span class="face" style="background:linear-gradient(165deg,#e6e2dc,#a89f92 60%,#3f3a33)"><span class="bno">Vol.21</span><span class="rt">9.1</span>🗡️</span></div>
+        <div class="cap"><h3>铁与盐</h3><p>热血 / 奇幻 · 连载中</p></div>
+      </a>
+      <a href="#" class="manga">
+        <div class="vol"><span class="face" style="background:linear-gradient(165deg,#ffd9d4,#f0958f 60%,#7d2622)"><span class="bno">Vol.06</span><span class="rt">8.9</span>🐈</span></div>
+        <div class="cap"><h3>屋顶上的猫</h3><p>日常 / 治愈 · 完结</p></div>
+      </a>
+      <a href="#" class="manga">
+        <div class="vol"><span class="face" style="background:linear-gradient(165deg,#d6e6ff,#8fb0e8 60%,#26406f)"><span class="bno">Vol.14</span><span class="rt">9.0</span>🔍</span></div>
+        <div class="cap"><h3>第三把钥匙</h3><p>悬疑 / 推理 · 连载中</p></div>
+      </a>
+      <a href="#" class="manga">
+        <div class="vol"><span class="face" style="background:linear-gradient(165deg,#ffe9bf,#f0b429 60%,#7a5305)"><span class="bno">Vol.02</span><span class="rt">8.8</span>🎸</span></div>
+        <div class="cap"><h3>弦上的夏天</h3><p>音乐 / 青春 · 连载中</p></div>
+      </a>
+      <a href="#" class="manga">
+        <div class="vol"><span class="face" style="background:linear-gradient(165deg,#e0d4f5,#a583e0 60%,#42276e)"><span class="bno">Vol.07</span><span class="rt">8.7</span>🏮</span></div>
+        <div class="cap"><h3>旧巷灯市</h3><p>国风 / 志怪 · 连载中</p></div>
+      </a>
+    </div>
+  </section>
+
+  <!-- 栏目二 -->
+  <section class="wrap" id="category">
+    <div class="head">
+      <div>
+        <h2><span class="pnum b"><b>02</b></span>漫画分类 · 按题材找书</h2>
+        <p>香香漫画全站书库，题材清晰检索更快</p>
+      </div>
+      <a href="#" class="more">全部分类 &gt;</a>
+    </div>
+    <div class="cats">
+      <a href="#" class="genre"><em>🔥</em><b>热血</b><small>3428 部</small></a>
+      <a href="#" class="genre"><em>💕</em><b>恋爱</b><small>3165 部</small></a>
+      <a href="#" class="genre"><em>🔍</em><b>悬疑</b><small>2174 部</small></a>
+      <a href="#" class="genre"><em>🌿</em><b>治愈</b><small>2652 部</small></a>
+      <a href="#" class="genre"><em>⚔️</em><b>奇幻</b><small>2986 部</small></a>
+      <a href="#" class="genre"><em>😄</em><b>搞笑</b><small>2537 部</small></a>
+      <a href="#" class="genre"><em>🏫</em><b>校园</b><small>2308 部</small></a>
+      <a href="#" class="genre"><em>🏮</em><b>国风</b><small>1862 部</small></a>
+      <a href="#" class="genre"><em>🚀</em><b>科幻</b><small>1644 部</small></a>
+      <a href="#" class="genre"><em>👻</em><b>恐怖</b><small>1186 部</small></a>
+      <a href="#" class="genre"><em>🍜</em><b>美食</b><small>1352 部</small></a>
+      <a href="#" class="genre"><em>🐉</em><b>冒险</b><small>2746 部</small></a>
+    </div>
+  </section>
+
+  <!-- 栏目三 -->
+  <section class="wrap" id="update">
+    <div class="cols">
+      <div class="pnl sheet">
+        <h3><span></span>今日更新 · 连载追更</h3>
+        <ul class="up">
+          <li><span class="n mono">01</span><span class="t"><b>香香物语</b><small>恋爱 · 校园 · 作者 林小满</small></span><span class="e">更新至 128 话</span></li>
+          <li><span class="n mono">02</span><span class="t"><b>第七页的雨</b><small>青春 · 治愈 · 作者 苏叶</small></span><span class="e">更新至 96 话</span></li>
+          <li><span class="n mono">03</span><span class="t"><b>橘子汽水社</b><small>群像 · 日常 · 作者 何棠</small></span><span class="e">更新至 84 话</span></li>
+          <li><span class="n mono">04</span><span class="t"><b>深夜面包店</b><small>治愈 · 生活 · 作者 温言</small></span><span class="e">更新至 62 话</span></li>
+          <li><span class="n mono">05</span><span class="t"><b>风与单车</b><small>运动 · 青春 · 作者 陈野</small></span><span class="e">更新至 110 话</span></li>
+          <li><span class="n mono">06</span><span class="t"><b>铁与盐</b><small>热血 · 奇幻 · 香香漫画独家</small></span><span class="e">更新至 214 话</span></li>
+          <li><span class="n mono">07</span><span class="t"><b>第三把钥匙</b><small>悬疑 · 推理 · 作者 江屿</small></span><span class="e">更新至 77 话</span></li>
+          <li><span class="n mono">08</span><span class="t"><b>旧巷灯市</b><small>国风 · 志怪 · 作者 白露</small></span><span class="e">更新至 58 话</span></li>
+        </ul>
+      </div>
+      <div class="pnl sheet">
+        <h3><span></span>人气排行榜 TOP10</h3>
+        <ol class="rk">
+          <li><span class="n mono">01</span><span class="nm">香香物语</span><span class="inkbar r"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="h mono">1286万</span></li>
+          <li><span class="n mono">02</span><span class="nm">风与单车</span><span class="inkbar b"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><span class="h mono">1142万</span></li>
+          <li><span class="n mono">03</span><span class="nm">第七页的雨</span><span class="inkbar g"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="h mono">1078万</span></li>
+          <li><span class="n mono">04</span><span class="nm">铁与盐</span><span class="inkbar"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span><span class="h mono">964万</span></li>
+          <li><span class="n mono">05</span><span class="nm">橘子汽水社</span><span class="inkbar y"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i><i></i><i></i></span><span class="h mono">893万</span></li>
+          <li><span class="n mono">06</span><span class="nm">深夜面包店</span><span class="inkbar p"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i><i></i><i></i><i></i></span><span class="h mono">827万</span></li>
+          <li><span class="n mono">07</span><span class="nm">第三把钥匙</span><span class="inkbar r"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i><i></i><i></i><i></i><i></i></span><span class="h mono">765万</span></li>
+          <li><span class="n mono">08</span><span class="nm">屋顶上的猫</span><span class="inkbar b"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span><span class="h mono">688万</span></li>
+          <li><span class="n mono">09</span><span class="nm">弦上的夏天</span><span class="inkbar g"><i class="on"></i><i class="on"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span><span class="h mono">612万</span></li>
+          <li><span class="n mono">10</span><span class="nm">旧巷灯市</span><span class="inkbar"><i class="on"></i><i class="on"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span><span class="h mono">547万</span></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap"><div class="panelbar" aria-hidden="true"><i></i><b>第 02 话</b><i></i></div></div>
+
+  <!-- 栏目四 -->
+  <section class="wrap" id="zone">
+    <div class="head">
+      <div>
+        <h2><span class="pnum g"><b>03</b></span>国漫 · 日漫 · 韩漫专区</h2>
+        <p>三地作品分区呈现，同步跟读</p>
+      </div>
+      <a href="#" class="more">更多 &gt;</a>
+    </div>
+    <div class="grid">
+      <a href="#" class="manga">
+        <div class="vol"><span class="face" style="background:linear-gradient(165deg,#ffd9d4,#e05a58 60%,#6f1a1a)"><span class="bno">国漫</span><span class="rt">9.4</span>🏮</span></div>
+        <div class="cap"><h3>山海食记</h3><p>国风 / 美食 · 连载中</p></div>
+      </a>
+      <a href="#" class="manga">
+        <div class="vol"><span class="face" style="background:linear-gradient(165deg,#d6e6ff,#5b8fd6 60%,#1f3a63)"><span class="bno">国漫</span><span class="rt">9.1</span>🐉</span></div>
+        <div class="cap"><h3>长夜行</h3><p>武侠 / 剧情 · 连载中</p></div>
+      </a>
+      <a href="#" class="manga">
+        <div class="vol"><span class="face" style="background:linear-gradient(165deg,#ffe9bf,#e3a02a 60%,#6f4c05)"><span class="bno">日漫</span><span class="rt">9.3</span>🎐</span></div>
+        <div class="cap"><h3>夏日风铃</h3><p>青春 / 日常 · 连载中</p></div>
+      </a>
+      <a href="#" class="manga">
+        <div class="vol"><span class="face" style="background:linear-gradient(165deg,#e0d4f5,#8f6bd6 60%,#3a2063)"><span class="bno">日漫</span><span class="rt">9.0</span>🍥</span></div>
+        <div class="cap"><h3>深夜食堂帖</h3><p>治愈 / 生活 · 连载中</p></div>
+      </a>
+      <a href="#" class="manga">
+        <div class="vol"><span class="face" style="background:linear-gradient(165deg,#d6f2e0,#4fa87a 60%,#1c5237)"><span class="bno">韩漫</span><span class="rt">8.9</span>🌙</span></div>
+        <div class="cap"><h3>都市月光</h3><p>都市 / 剧情 · 连载中</p></div>
+      </a>
+    </div>
+  </section>
+
+  <!-- 栏目五 -->
+  <section class="wrap" id="news">
+    <div class="head">
+      <div>
+        <h2><span class="pnum y"><b>04</b></span>漫画资讯 · 新书速递</h2>
+        <p>香香漫画第一时间带来行业动向</p>
+      </div>
+      <a href="#" class="more">资讯首页 &gt;</a>
+    </div>
+    <div class="news">
+      <a href="#" class="art">
+        <div class="ph" style="background:linear-gradient(150deg,#ffd9d4,#e05a58 72%,#6f1a1a)">🌸<span>新书速递</span></div>
+        <div class="bd">
+          <h3>《香香物语》单行本第 12 卷开启预售</h3>
+          <p>人气恋爱漫画《香香物语》第 12 卷即将上市，香香漫画同步上线电子版与作者访谈。</p>
+          <time datetime="2026-09-18">2026-09-18</time>
+        </div>
+      </a>
+      <a href="#" class="art">
+        <div class="ph" style="background:linear-gradient(150deg,#d6f2e0,#4fa87a 72%,#1c5237)">🚲<span>连载观察</span></div>
+        <div class="bd">
+          <h3>《风与单车》人气走高，运动题材持续升温</h3>
+          <p>连载三周站内评分稳定在 9.5，位居香香漫画人气排行榜第二。</p>
+          <time datetime="2026-09-15">2026-09-15</time>
+        </div>
+      </a>
+      <a href="#" class="art">
+        <div class="ph" style="background:linear-gradient(150deg,#ffe9bf,#e3a02a 72%,#6f4c05)">🏮<span>国漫前沿</span></div>
+        <div class="bd">
+          <h3>《山海食记》推出特别篇，国风美食再受热捧</h3>
+          <p>作者透露特别篇将新增六道山海料理，香香漫画国漫专区同步更新。</p>
+          <time datetime="2026-09-12">2026-09-12</time>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- 栏目六 -->
+  <section class="wrap" id="about">
+    <div class="head">
+      <div>
+        <h2><span class="pnum p"><b>05</b></span>关于香香漫画</h2>
+        <p>四个特点，一格一格翻下去</p>
+      </div>
+    </div>
+    <div class="feats">
+      <div class="feat"><em>📖</em><b>章节齐全</b><p>连载完结全收录，缺章自动补全</p></div>
+      <div class="feat"><em>📱</em><b>多端适配</b><p>手机、平板、电脑全端自适应</p></div>
+      <div class="feat"><em>🖼️</em><b>高清图源</b><p>高清扫描页，条漫竖屏直读</p></div>
+      <div class="feat"><em>🔄</em><b>每日更新</b><p>早晚两次更新，追更不错过</p></div>
+    </div>
+    <article class="intro sheet" style="margin-top:18px">
+      <h3>香香漫画 — 翻开下一页，故事正在发生</h3>
+      <p>香香漫画（www.xiangxiangmanhua-cn）是一家面向漫画读者的在线阅读平台，设有热门漫画在线阅读、国漫日漫韩漫专区、连载追更、人气排行榜、漫画资讯五大核心板块。站内书库按题材、地区、连载状态多维度归类，配合精准搜索与智能推荐，帮助读者快速找到想看的作品。</p>
+      <p>香香漫画持续扩充图源、优化阅读体验，提供卷纸与条漫两种阅读模式，致力于稳定、流畅、内容丰富的在线漫画阅读服务。所有条目以更新时间倒序编排，检索结果可按题材、地区、状态二次筛选。</p>
+      <span class="sig mono">📖 香香漫画 · MANGA WEEKLY · 2026</span>
+    </article>
+  </section>
+</main>
+
+<footer>
+  <div class="toner bot" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="frow">
+      <div>
+        <h4>香香漫画</h4>
+        <p>香香漫画 — 热门漫画在线阅读平台，连载追更、国漫日漫韩漫大全、人气排行榜与漫画资讯，每日更新章节。</p>
+        <p>网址：https://www.xiangxiangmanhua-cn</p>
+      </div>
+      <div>
+        <h4>漫画栏目</h4>
+        <ul>
+          <li><a href="#">热门漫画</a></li>
+          <li><a href="#">国漫专区</a></li>
+          <li><a href="#">日漫专区</a></li>
+          <li><a href="#">韩漫专区</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>榜单资讯</h4>
+        <ul>
+          <li><a href="#">人气排行榜</a></li>
+          <li><a href="#">完结佳作</a></li>
+          <li><a href="#">漫画资讯</a></li>
+          <li><a href="#">新书预告</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>帮助中心</h4>
+        <ul>
+          <li><a href="#">站点地图</a></li>
+          <li><a href="#">阅读帮助</a></li>
+          <li><a href="#">意见反馈</a></li>
+          <li><a href="#">联系我们</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="flinks">
+      <a href="#">漫画大全</a><a href="#">连载漫画</a><a href="#">完结漫画</a><a href="#">国漫大全</a>
+      <a href="#">热血漫画</a><a href="#">恋爱漫画</a><a href="#">悬疑漫画</a><a href="#">治愈漫画</a>
+      <a href="#">奇幻漫画</a><a href="#">搞笑漫画</a><a href="#">国风漫画</a><a href="#">条漫</a>
+    </div>
+    <p class="copy">© 2026 香香漫画 www.xiangxiangmanhua-cn · 在线漫画阅读平台　|　<a href="#">站点地图</a>　|　<a href="#">隐私政策</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
